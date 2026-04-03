@@ -1,11 +1,14 @@
 student = {
-    "name": "Sagar",
-    "age": 27,
-    "course": "Computer Science"
+    "name": "Varnika",
+    "age": 22,
+    "course": "MCA"
 }
 
 keyName = 'age'
 
 print(student[keyName])
-for stud in student:
-    print(f"stud = {stud} , type of stud = {type(stud)} keyValue = {student.get(stud)}")
+
+# Loop through keys(Dynamically allocation)
+# for key in student:
+#     print(f"key = {key}, type of key = {type(key)}, keyValue = {student.get(key)}")
+
