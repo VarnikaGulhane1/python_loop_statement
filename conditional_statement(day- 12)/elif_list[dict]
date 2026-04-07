@@ -1,0 +1,30 @@
+# task of the day(check the age classification of each at once)
+user_data = [
+    {
+        'username': 'user1',
+        'user_age': 23
+    },
+    {
+        'username': 'user2',
+        'user_age': 50
+    },
+    {
+        'username': 'user3',
+        'user_age': 13
+    }
+]
+
+for user in user_data:
+    name = user['username']
+    age = user['user_age']
+
+    if age < 10:
+        category = 'Child'
+    elif age < 18:
+        category = 'Teenager'
+    elif age < 60:
+        category = 'Adult'
+    else:
+        category = 'Senior Citizen'
+        
+    print(f"User: {name} | Age: {age} | Category: {category}")
